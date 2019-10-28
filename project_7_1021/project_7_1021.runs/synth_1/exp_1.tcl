@@ -16,7 +16,6 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_msg_config -id {Common 17-41} -limit 10000000
 create_project -in_memory -part xc7a35tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -37,6 +36,9 @@ read_verilog -library xil_defaultlib E:/Documents/digital-logic/project_7_1021/p
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
+read_xdc E:/Documents/digital-logic/project_7_1021/project_7_1021.srcs/constrs_1/new/constraints_1.xdc
+set_property used_in_implementation false [get_files E:/Documents/digital-logic/project_7_1021/project_7_1021.srcs/constrs_1/new/constraints_1.xdc]
+
 
 synth_design -top exp_1 -part xc7a35tcsg324-1
 

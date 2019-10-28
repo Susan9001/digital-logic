@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Documents/digital-logic/project_8_1028/project_8_1028.srcs/sources_1/new/exp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module exp_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Documents/digital-logic/project_8_1028/project_8_1028.srcs/sim_1/new/sim_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_1

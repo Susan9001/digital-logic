@@ -34,12 +34,12 @@ module sim_1(
         in = 6'b000000;
         assign A = in[5:3];
         assign B = in[2:0];        
-        assign inc = 0;
+        assign inc = 1;
     end
     always #10
     begin
         in = in + 1;
-        inc = inc ^ 1;
+        inc = inc + 1;
     end
     exp_1 exp_1(A, B, inc, C_out, S);
 endmodule
