@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Nov  4 12:14:50 2019
+# Process ID: 15184
+# Current directory: E:/Documents/digital-logic/project_9/project_9.runs/synth_1
+# Command line: vivado.exe -log exp_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source exp_1.tcl
+# Log file: E:/Documents/digital-logic/project_9/project_9.runs/synth_1/exp_1.vds
+# Journal file: E:/Documents/digital-logic/project_9/project_9.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source exp_1.tcl -notrace
