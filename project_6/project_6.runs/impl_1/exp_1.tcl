@@ -60,26 +60,20 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {Common 17-41} -limit 10000000
-set_msg_config -id {HDL 9-1061} -limit 100000
-set_msg_config -id {HDL 9-1654} -limit 100000
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 
 start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param synth.incrementalSynthesisCache C:/Users/Administrator/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-5208-Stu105/incrSyn
   create_project -in_memory -part xc7a35tcsg324-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir F:/U/project_6/project_6.cache/wt [current_project]
-  set_property parent.project_path F:/U/project_6/project_6.xpr [current_project]
-  set_property ip_output_repo F:/U/project_6/project_6.cache/ip [current_project]
+  set_property webtalk.parent_dir E:/Documents/digital-logic/project_6/project_6.cache/wt [current_project]
+  set_property parent.project_path E:/Documents/digital-logic/project_6/project_6.xpr [current_project]
+  set_property ip_output_repo E:/Documents/digital-logic/project_6/project_6.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet F:/U/project_6/project_6.runs/synth_1/exp_1.dcp
-  read_xdc F:/U/project_6/project_6.srcs/constrs_1/new/constraint_1.xdc
+  add_files -quiet E:/Documents/digital-logic/project_6/project_6.runs/synth_1/exp_1.dcp
+  read_xdc E:/Documents/digital-logic/project_6/project_6.srcs/constrs_1/new/constraint_1.xdc
   link_design -top exp_1 -part xc7a35tcsg324-1
   close_msg_db -file init_design.pb
 } RESULT]

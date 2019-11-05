@@ -1,6 +1,6 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Documents/数字逻辑实验/project_5_1014/project_5_1014.srcs/sources_1/imports/Desktop/exp1.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Documents/digital-logic/project_5_1014/project_5_1014.srcs/sources_1/imports/Desktop/exp1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module exp1
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Documents/数字逻辑实验/project_5_1014/project_5_1014.srcs/sim_1/imports/Desktop/sim_1.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Documents/digital-logic/project_5_1014/project_5_1014.srcs/sim_1/imports/Desktop/sim_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module sim_1
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Documents/数字逻辑实验/project_5_1014/project_5_1014.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Documents/digital-logic/project_5_1014/project_5_1014.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module glbl

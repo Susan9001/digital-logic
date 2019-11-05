@@ -19,13 +19,11 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-
 module exp_1(
     input in1,
     input in2,
     output out
     );
-    
     
     nand (temp1, in1, in2);
     nand (temp2, in1, temp1);
