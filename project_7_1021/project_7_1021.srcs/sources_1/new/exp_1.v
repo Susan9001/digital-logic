@@ -42,5 +42,3 @@ module exp_1(
     
 endmodule
 
-
-
