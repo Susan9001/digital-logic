@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="sim_1_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="sim_1" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="185000001fs"></ZoomEndTime>
+      <Cursor1Time time="72000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="103"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="4" />
+   <wvobject fp_name="/sim_1/F" type="array">
+      <obj_property name="ElementShortName">F[2:0]</obj_property>
+      <obj_property name="ObjectShortName">F[2:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim_1/A" type="array">
+      <obj_property name="ElementShortName">A[1:0]</obj_property>
+      <obj_property name="ObjectShortName">A[1:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim_1/B" type="array">
+      <obj_property name="ElementShortName">B[1:0]</obj_property>
+      <obj_property name="ObjectShortName">B[1:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim_1/I" type="array">
+      <obj_property name="ElementShortName">I[2:0]</obj_property>
+      <obj_property name="ObjectShortName">I[2:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+</wave_config>
