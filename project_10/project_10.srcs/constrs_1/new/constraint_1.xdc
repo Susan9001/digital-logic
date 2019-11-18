@@ -35,3 +35,5 @@ set_property PACKAGE_PIN A1 [get_ports {out_num[2]}]
 set_property PACKAGE_PIN B3 [get_ports {out_num[1]}]
 set_property PACKAGE_PIN B2 [get_ports {out_num[0]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {out_chip[1]}]
+
+set_property PACKAGE_PIN P4 [get_ports {in_chip[2]}]

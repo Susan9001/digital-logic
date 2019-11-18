@@ -16,9 +16,6 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param synth.incrementalSynthesisCache C:/Windows/System32/.Xil/Vivado-9088-NBHAGXWXRYYRFTS/incrSyn
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7a35tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -39,6 +36,9 @@ read_verilog -library xil_defaultlib E:/Documents/digital-logic/project_10/proje
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
+read_xdc E:/Documents/digital-logic/project_10/project_10.srcs/constrs_1/new/constraint_1.xdc
+set_property used_in_implementation false [get_files E:/Documents/digital-logic/project_10/project_10.srcs/constrs_1/new/constraint_1.xdc]
+
 
 synth_design -top exp_11 -part xc7a35tcsg324-1
 
