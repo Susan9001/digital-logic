@@ -30,7 +30,7 @@ module shift_194(
     );
     
     always @(posedge clk or negedge notCR)
-        if (notCR == 1) 
+        if (notCR == 1)
         begin
             q <= 4'b0000;
         end

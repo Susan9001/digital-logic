@@ -23,6 +23,7 @@
 module sim_1(
     output [7:0] Q
     );
+    reg [1:0] CC; // not CR, clk
     reg notCR;
     reg clk;
     reg [1:0] g;
@@ -39,8 +40,8 @@ module sim_1(
     end
     always #20
     begin
-        g = g + 1;
-//        notCR = notCR + 1;
+        notCR = ~notCR;
+        g = g + 1; 
     end
     dataShift8 dataShift8(.notCR(notCR), .clk(clk), .g(g), .ds(ds), .DATA(DATA), .Q(Q));
     
