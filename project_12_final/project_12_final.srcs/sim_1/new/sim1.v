@@ -3,7 +3,7 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 2019/11/25 13:41:01
+// Create Date: 2019/12/01 16:50:08
 // Design Name: 
 // Module Name: sim_1
 // Project Name: 
@@ -21,13 +21,27 @@
 
 
 module sim_1(
-    output [3:0] qq
+    output [7:0] Q
     );
     reg notCR;
     reg clk;
-    reg s0;
-    reg s1;
+    reg [1:0] g;
     reg [1:0] ds;
-    reg [3:0] data;
+    reg [7:0] DATA;
+    
+    initial
+    begin
+        notCR = 1;
+        clk = 0;
+        g = 2'b00;
+        ds = 2'b01; // ×óÒÆ1£¬ÓÒ0
+        DATA = 8'b00101101;
+    end
+    always #20
+    begin
+        g = g + 1;
+//        notCR = notCR + 1;
+    end
+    dataShift8 dataShift8(.notCR(notCR), .clk(clk), .g(g), .ds(ds), .DATA(DATA), .Q(Q));
     
 endmodule

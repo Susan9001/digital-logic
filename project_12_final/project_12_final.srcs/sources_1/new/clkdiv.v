@@ -28,5 +28,8 @@ module clkdiv(
     begin
         q <= q + 1;
     end        
-    assign clk = q[24]; 
+    assign clk = q[23];
+//    assign clk = clk_in + 1; 
 endmodule
+
+

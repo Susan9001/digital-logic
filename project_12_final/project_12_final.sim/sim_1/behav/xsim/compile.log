@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Documents/digital-logic/project_12_final/project_12_final.srcs/sources_1/new/clkdiv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clkdiv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Documents/digital-logic/project_12_final/project_12_final.srcs/sources_1/new/dataShift8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataShift8
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Documents/digital-logic/project_12_final/project_12_final.srcs/sources_1/new/shift_194.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shift_194
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Documents/digital-logic/project_12_final/project_12_final.srcs/sim_1/new/sim1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_1
