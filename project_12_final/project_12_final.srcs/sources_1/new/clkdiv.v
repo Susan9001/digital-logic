@@ -26,10 +26,10 @@ module clkdiv(
     reg [24:0] q = 25'b0;
     always @(posedge clk_in)
     begin
-        q <= q + 1;
+        q = q + 1;
     end        
     assign clk = q[24];
-//    assign clk = clk_in + 1; 
+//    assign clk = clk_in;
 endmodule
 
 

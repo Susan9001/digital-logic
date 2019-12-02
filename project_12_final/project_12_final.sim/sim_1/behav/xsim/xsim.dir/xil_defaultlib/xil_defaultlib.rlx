@@ -3,7 +3,7 @@
 Dec 15 2017
 21:07:18
 E:/Documents/digital-logic/project_12_final/project_12_final.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
-E:/Documents/digital-logic/project_12_final/project_12_final.srcs/sim_1/new/sim1.v,1575254063,verilog,,,,sim_1,,,,,,,,
-E:/Documents/digital-logic/project_12_final/project_12_final.srcs/sources_1/new/clkdiv.v,1575254277,verilog,,E:/Documents/digital-logic/project_12_final/project_12_final.srcs/sources_1/new/dataShift8.v,,clkdiv,,,,,,,,
-E:/Documents/digital-logic/project_12_final/project_12_final.srcs/sources_1/new/dataShift8.v,1575260742,verilog,,E:/Documents/digital-logic/project_12_final/project_12_final.srcs/sources_1/new/shift_194.v,,dataShift8,,,,,,,,
-E:/Documents/digital-logic/project_12_final/project_12_final.srcs/sources_1/new/shift_194.v,1575197894,verilog,,E:/Documents/digital-logic/project_12_final/project_12_final.srcs/sim_1/new/sim1.v,,shift_194,,,,,,,,
+E:/Documents/digital-logic/project_12_final/project_12_final.srcs/sim_1/new/sim1.v,1575266190,verilog,,,,sim_1,,,,,,,,
+E:/Documents/digital-logic/project_12_final/project_12_final.srcs/sources_1/new/clkdiv.v,1575269058,verilog,,E:/Documents/digital-logic/project_12_final/project_12_final.srcs/sources_1/new/dataShift8.v,,clkdiv,,,,,,,,
+E:/Documents/digital-logic/project_12_final/project_12_final.srcs/sources_1/new/dataShift8.v,1575267298,verilog,,E:/Documents/digital-logic/project_12_final/project_12_final.srcs/sources_1/new/shift_194.v,,dataShift8,,,,,,,,
+E:/Documents/digital-logic/project_12_final/project_12_final.srcs/sources_1/new/shift_194.v,1575268762,verilog,,E:/Documents/digital-logic/project_12_final/project_12_final.srcs/sim_1/new/sim1.v,,shift_194,,,,,,,,

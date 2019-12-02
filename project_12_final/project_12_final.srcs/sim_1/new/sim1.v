@@ -23,7 +23,6 @@
 module sim_1(
     output [7:0] Q
     );
-    reg [1:0] CC; // not CR, clk
     reg notCR;
     reg clk;
     reg [1:0] g;
@@ -51,7 +50,7 @@ module sim_1(
         clk = 1'b0;
         notCR = 1;
         clk = 0;
-        g = 2'b00;
+        g = 2'b01;
         ds = 2'b01; // ×óÒÆ1£¬ÓÒ0
         DATA = 8'b00101101;
         forever
