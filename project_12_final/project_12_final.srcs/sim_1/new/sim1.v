@@ -28,34 +28,32 @@ module sim_1(
     reg [1:0] g;
     reg [1:0] ds;
     reg [7:0] DATA;
-    
-//    initial
-//    begin
-//        notCR = 1;
-//        clk = 0;
-//        g = 2'b00;
-//        ds = 2'b01; // ×óÒÆ1£¬ÓÒ0
-//        DATA = 8'b00101101;
-//    end
-//    always #20
-//    begin
-//        notCR = ~notCR;
-//        g = g + 1; 
-//    end
-
+    reg isFirst;
     parameter clk_period = 10;
-//    reg clk;
+    
     initial
     begin
         clk = 1'b0;
-        notCR = 1;
-        clk = 0;
-        g = 2'b01;
-        ds = 2'b01; // ×óÒÆ1£¬ÓÒ0
+        notCR = 1'b1;
+        g = 2'b11; // ÏÈËÍÊý
+        ds = 2'b10;
         DATA = 8'b00101101;
+        isFirst = 1'b1;
         forever
+        begin
             #(clk_period / 2) clk = ~clk;
+            if (isFirst != 0)
+            begin
+                isFirst = 1'b0;
+                g = 2'b10; // ×óÒÆ
+            end
+        end
     end
     dataShift8 dataShift8(.notCR(notCR), .clk(clk), .g(g), .ds(ds), .DATA(DATA), .Q(Q));
     
 endmodule
+
+
+
+
+
