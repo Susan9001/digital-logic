@@ -1,0 +1,10 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+E:/Documents/digital-logic/project_11_1203/project_11_1203.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
+E:/Documents/digital-logic/project_11_1203/project_11_1203.srcs/sim_1/new/sim_1.v,1575388494,verilog,,,,sim_1,,,,,,,,
+E:/Documents/digital-logic/project_11_1203/project_11_1203.srcs/sources_1/new/counter.v,1575390310,verilog,,E:/Documents/digital-logic/project_11_1203/project_11_1203.srcs/sources_1/new/div.v,,counter,,,,,,,,
+E:/Documents/digital-logic/project_11_1203/project_11_1203.srcs/sources_1/new/div.v,1575391210,verilog,,E:/Documents/digital-logic/project_11_1203/project_11_1203.srcs/sources_1/new/seg_2.v,,div,,,,,,,,
+E:/Documents/digital-logic/project_11_1203/project_11_1203.srcs/sources_1/new/seg_2.v,1575391668,verilog,,E:/Documents/digital-logic/project_11_1203/project_11_1203.srcs/sources_1/new/top.v,,seg_2,,,,,,,,
+E:/Documents/digital-logic/project_11_1203/project_11_1203.srcs/sources_1/new/top.v,1575388294,verilog,,E:/Documents/digital-logic/project_11_1203/project_11_1203.srcs/sim_1/new/sim_1.v,,top,,,,,,,,
