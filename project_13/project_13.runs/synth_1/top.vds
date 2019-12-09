@@ -2,8 +2,8 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Tue Dec  3 18:46:52 2019
-# Process ID: 4228
+# Start of session at: Mon Dec  9 10:37:05 2019
+# Process ID: 21772
 # Current directory: E:/Documents/digital-logic/project_13/project_13.runs/synth_1
 # Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
 # Log file: E:/Documents/digital-logic/project_13/project_13.runs/synth_1/top.vds
@@ -15,15 +15,14 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 14524 
+INFO: Helper process launched with PID 14828 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 389.230 ; gain = 97.289
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 389.125 ; gain = 98.129
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'top' [E:/Documents/digital-logic/project_13/project_13.srcs/sources_1/new/top.v:22]
 INFO: [Synth 8-638] synthesizing module 'clk_div' [E:/Documents/digital-logic/project_13/project_13.srcs/sources_1/new/clk_div.v:23]
-WARNING: [Synth 8-6014] Unused sequential element q_reg was removed.  [E:/Documents/digital-logic/project_13/project_13.srcs/sources_1/new/clk_div.v:31]
 INFO: [Synth 8-256] done synthesizing module 'clk_div' (1#1) [E:/Documents/digital-logic/project_13/project_13.srcs/sources_1/new/clk_div.v:23]
-INFO: [Synth 8-638] synthesizing module 'traffic' [E:/Documents/digital-logic/project_13/project_13.srcs/sources_1/new/traffic.v:23]
+INFO: [Synth 8-638] synthesizing module 'traffic' [E:/Documents/digital-logic/project_13/project_13.srcs/sources_1/new/traffic.v:19]
 	Parameter S0 bound to: 2'b00 
 	Parameter S1 bound to: 2'b01 
 	Parameter S2 bound to: 2'b10 
@@ -39,13 +38,12 @@ INFO: [Synth 8-638] synthesizing module 'traffic' [E:/Documents/digital-logic/pr
 	Parameter LGR bound to: 6'b100001 
 	Parameter LGY bound to: 6'b100010 
 	Parameter LGG bound to: 6'b100100 
-INFO: [Synth 8-226] default block is never used [E:/Documents/digital-logic/project_13/project_13.srcs/sources_1/new/traffic.v:47]
-INFO: [Synth 8-226] default block is never used [E:/Documents/digital-logic/project_13/project_13.srcs/sources_1/new/traffic.v:92]
-INFO: [Synth 8-256] done synthesizing module 'traffic' (2#1) [E:/Documents/digital-logic/project_13/project_13.srcs/sources_1/new/traffic.v:23]
+INFO: [Synth 8-226] default block is never used [E:/Documents/digital-logic/project_13/project_13.srcs/sources_1/new/traffic.v:43]
+INFO: [Synth 8-226] default block is never used [E:/Documents/digital-logic/project_13/project_13.srcs/sources_1/new/traffic.v:88]
+INFO: [Synth 8-256] done synthesizing module 'traffic' (2#1) [E:/Documents/digital-logic/project_13/project_13.srcs/sources_1/new/traffic.v:19]
 INFO: [Synth 8-256] done synthesizing module 'top' (3#1) [E:/Documents/digital-logic/project_13/project_13.srcs/sources_1/new/top.v:22]
-WARNING: [Synth 8-3331] design clk_div has unconnected port clr
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 441.070 ; gain = 149.129
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 440.984 ; gain = 149.988
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -55,7 +53,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 441.070 ; gain = 149.129
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 440.984 ; gain = 149.988
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -71,25 +69,26 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 755.004 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 760.559 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 755.004 ; gain = 463.063
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 760.559 ; gain = 469.563
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 755.004 ; gain = 463.063
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 760.559 ; gain = 469.563
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 755.004 ; gain = 463.063
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 760.559 ; gain = 469.563
 ---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element q_reg was removed.  [E:/Documents/digital-logic/project_13/project_13.srcs/sources_1/new/clk_div.v:31]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 755.004 ; gain = 463.063
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 760.559 ; gain = 469.563
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -147,8 +146,9 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element clkdiv/q_reg was removed.  [E:/Documents/digital-logic/project_13/project_13.srcs/sources_1/new/clk_div.v:31]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 755.004 ; gain = 463.063
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 760.559 ; gain = 469.563
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -160,13 +160,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 762.703 ; gain = 470.762
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 763.879 ; gain = 472.883
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 762.703 ; gain = 470.762
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 763.879 ; gain = 472.883
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -178,7 +178,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 782.273 ; gain = 490.332
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 782.941 ; gain = 491.945
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -202,7 +202,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 782.273 ; gain = 490.332
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 782.941 ; gain = 491.945
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -215,7 +215,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 782.273 ; gain = 490.332
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 782.941 ; gain = 491.945
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -227,25 +227,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 782.273 ; gain = 490.332
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 782.941 ; gain = 491.945
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 782.273 ; gain = 490.332
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 782.941 ; gain = 491.945
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 782.273 ; gain = 490.332
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 782.941 ; gain = 491.945
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 782.273 ; gain = 490.332
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 782.941 ; gain = 491.945
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -258,34 +258,36 @@ Report BlackBoxes:
 +-+--------------+----------+
 
 Report Cell Usage: 
-+------+-----+------+
-|      |Cell |Count |
-+------+-----+------+
-|1     |BUFG |     1|
-|2     |LUT1 |     1|
-|3     |LUT2 |     4|
-|4     |LUT5 |     1|
-|5     |LUT6 |     6|
-|6     |FDCE |     7|
-|7     |IBUF |     2|
-|8     |OBUF |     6|
-+------+-----+------+
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     7|
+|3     |LUT1   |     2|
+|4     |LUT2   |     4|
+|5     |LUT5   |     1|
+|6     |LUT6   |     6|
+|7     |FDCE   |    32|
+|8     |IBUF   |     2|
+|9     |OBUF   |     6|
++------+-------+------+
 
 Report Instance Areas: 
 +------+----------+--------+------+
 |      |Instance  |Module  |Cells |
 +------+----------+--------+------+
-|1     |top       |        |    28|
-|2     |  traffic |traffic |    19|
+|1     |top       |        |    61|
+|2     |  clkdiv  |clk_div |    33|
+|3     |  traffic |traffic |    19|
 +------+----------+--------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 782.273 ; gain = 490.332
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 782.941 ; gain = 491.945
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 782.273 ; gain = 176.398
-Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 782.273 ; gain = 490.332
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 782.941 ; gain = 172.371
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 782.941 ; gain = 491.945
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -295,8 +297,8 @@ No Unisim elements were transformed.
 INFO: [Common 17-83] Releasing license: Synthesis
 20 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 784.711 ; gain = 505.664
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 782.941 ; gain = 504.707
 INFO: [Common 17-1381] The checkpoint 'E:/Documents/digital-logic/project_13/project_13.runs/synth_1/top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 784.711 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Tue Dec  3 18:47:28 2019...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 782.941 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Dec  9 10:37:42 2019...

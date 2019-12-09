@@ -14,20 +14,19 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 16772 
+INFO: Helper process launched with PID 14408 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 388.648 ; gain = 96.570
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 388.688 ; gain = 97.719
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'dataShift8' [E:/Documents/digital-logic/project_12_final/project_12_final.srcs/sources_1/new/dataShift8.v:22]
 INFO: [Synth 8-638] synthesizing module 'clkdiv' [E:/Documents/digital-logic/project_12_final/project_12_final.srcs/sources_1/new/clkdiv.v:22]
 INFO: [Synth 8-256] done synthesizing module 'clkdiv' (1#1) [E:/Documents/digital-logic/project_12_final/project_12_final.srcs/sources_1/new/clkdiv.v:22]
 INFO: [Synth 8-638] synthesizing module 'shift_194' [E:/Documents/digital-logic/project_12_final/project_12_final.srcs/sources_1/new/shift_194.v:23]
-WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [E:/Documents/digital-logic/project_12_final/project_12_final.srcs/sources_1/new/shift_194.v:34]
-INFO: [Synth 8-226] default block is never used [E:/Documents/digital-logic/project_12_final/project_12_final.srcs/sources_1/new/shift_194.v:49]
+INFO: [Synth 8-226] default block is never used [E:/Documents/digital-logic/project_12_final/project_12_final.srcs/sources_1/new/shift_194.v:38]
 INFO: [Synth 8-256] done synthesizing module 'shift_194' (2#1) [E:/Documents/digital-logic/project_12_final/project_12_final.srcs/sources_1/new/shift_194.v:23]
 INFO: [Synth 8-256] done synthesizing module 'dataShift8' (3#1) [E:/Documents/digital-logic/project_12_final/project_12_final.srcs/sources_1/new/dataShift8.v:22]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 441.246 ; gain = 149.168
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 440.781 ; gain = 149.813
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -37,7 +36,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 441.246 ; gain = 149.168
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 440.781 ; gain = 149.813
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -53,26 +52,26 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 760.930 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 754.004 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 760.930 ; gain = 468.852
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 754.004 ; gain = 463.035
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 760.930 ; gain = 468.852
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 754.004 ; gain = 463.035
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 760.930 ; gain = 468.852
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 754.004 ; gain = 463.035
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-6014] Unused sequential element q_reg was removed.  [E:/Documents/digital-logic/project_12_final/project_12_final.srcs/sources_1/new/clkdiv.v:29]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 760.930 ; gain = 468.852
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 754.004 ; gain = 463.035
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -86,11 +85,9 @@ Start RTL Component Statistics
 Detailed RTL Component Info : 
 +---Registers : 
 	                4 Bit    Registers := 2     
-	                1 Bit    Registers := 2     
 +---Muxes : 
 	   4 Input      4 Bit        Muxes := 2     
-	   2 Input      4 Bit        Muxes := 4     
-	   5 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -102,11 +99,9 @@ Module shift_194
 Detailed RTL Component Info : 
 +---Registers : 
 	                4 Bit    Registers := 1     
-	                1 Bit    Registers := 1     
 +---Muxes : 
 	   4 Input      4 Bit        Muxes := 1     
-	   2 Input      4 Bit        Muxes := 2     
-	   5 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -124,7 +119,7 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-6014] Unused sequential element clkdiv/q_reg was removed.  [E:/Documents/digital-logic/project_12_final/project_12_final.srcs/sources_1/new/clkdiv.v:29]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 760.930 ; gain = 468.852
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 754.004 ; gain = 463.035
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -136,13 +131,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 765.961 ; gain = 473.883
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 762.055 ; gain = 471.086
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 766.035 ; gain = 473.957
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 762.129 ; gain = 471.160
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -153,9 +148,8 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-3886] merging instance 'shiftL/isFirst_reg' (FDE) to 'shiftH/isFirst_reg'
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 785.602 ; gain = 493.523
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 781.188 ; gain = 490.219
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -179,7 +173,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 785.602 ; gain = 493.523
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 781.188 ; gain = 490.219
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -192,7 +186,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 785.602 ; gain = 493.523
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 781.188 ; gain = 490.219
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -204,25 +198,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 785.602 ; gain = 493.523
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 781.188 ; gain = 490.219
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 785.602 ; gain = 493.523
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 781.188 ; gain = 490.219
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 785.602 ; gain = 493.523
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 781.188 ; gain = 490.219
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 785.602 ; gain = 493.523
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 781.188 ; gain = 490.219
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -240,11 +234,11 @@ Report Cell Usage:
 +------+-------+------+
 |1     |BUFG   |     1|
 |2     |CARRY4 |     7|
-|3     |LUT1   |     1|
-|4     |LUT3   |     3|
-|5     |LUT4   |     2|
-|6     |LUT6   |     8|
-|7     |FDRE   |    34|
+|3     |LUT1   |     2|
+|4     |LUT2   |     1|
+|5     |LUT5   |     8|
+|6     |FDCE   |     8|
+|7     |FDRE   |    25|
 |8     |IBUF   |    14|
 |9     |OBUF   |     8|
 +------+-------+------+
@@ -253,17 +247,17 @@ Report Instance Areas:
 +------+---------+------------+------+
 |      |Instance |Module      |Cells |
 +------+---------+------------+------+
-|1     |top      |            |    78|
+|1     |top      |            |    74|
 |2     |  clkdiv |clkdiv      |    33|
-|3     |  shiftH |shift_194   |    18|
-|4     |  shiftL |shift_194_0 |     4|
+|3     |  shiftH |shift_194   |     9|
+|4     |  shiftL |shift_194_0 |     9|
 +------+---------+------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 785.602 ; gain = 493.523
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 781.188 ; gain = 490.219
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:22 . Memory (MB): peak = 785.602 ; gain = 173.840
-Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 785.602 ; gain = 493.523
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 781.188 ; gain = 176.996
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 781.188 ; gain = 490.219
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 21 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -273,10 +267,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-20 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+19 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 788.152 ; gain = 509.023
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 781.188 ; gain = 502.527
 INFO: [Common 17-1381] The checkpoint 'E:/Documents/digital-logic/project_12_final/project_12_final.runs/synth_1/dataShift8.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file dataShift8_utilization_synth.rpt -pb dataShift8_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 788.152 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Mon Dec  2 14:50:29 2019...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 781.188 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Dec  9 12:29:37 2019...

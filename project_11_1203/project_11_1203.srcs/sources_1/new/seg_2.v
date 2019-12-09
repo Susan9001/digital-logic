@@ -27,7 +27,7 @@ module seg_2(
     output reg [1:0] an
     );
     
-    reg s = 0; // λ
+    reg s = 0; // λ     
     reg [3:0] digit;
     reg isFirst = 1;
        

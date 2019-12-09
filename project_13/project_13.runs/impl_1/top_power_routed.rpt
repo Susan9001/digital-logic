@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date             : Tue Dec  3 18:48:26 2019
+| Date             : Mon Dec  9 10:40:24 2019
 | Host             : NBHAGXWXRYYRFTS running 64-bit major release  (build 9200)
 | Command          : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 | Design           : top
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.303        |
+| Total On-Chip Power (W)  | 1.656        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.229        |
-| Device Static (W)        | 0.074        |
+| Dynamic (W)              | 1.580        |
+| Device Static (W)        | 0.075        |
 | Effective TJA (C/W)      | 4.8          |
-| Max Ambient (C)          | 78.8         |
-| Junction Temperature (C) | 31.2         |
+| Max Ambient (C)          | 77.1         |
+| Junction Temperature (C) | 32.9         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,15 +52,16 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.061 |       21 |       --- |             --- |
-|   LUT as Logic |     0.052 |       10 |     20800 |            0.05 |
+| Slice Logic    |     0.072 |       56 |       --- |             --- |
+|   LUT as Logic |     0.040 |       11 |     20800 |            0.05 |
+|   CARRY4       |     0.014 |        7 |      8150 |            0.09 |
+|   Register     |     0.013 |       32 |     41600 |            0.08 |
 |   BUFG         |     0.006 |        1 |        32 |            3.13 |
-|   Register     |     0.003 |        7 |     41600 |            0.02 |
-|   Others       |     0.000 |        1 |       --- |             --- |
-| Signals        |     0.036 |       15 |       --- |             --- |
-| I/O            |     1.132 |        8 |       210 |            3.81 |
-| Static Power   |     0.074 |          |           |                 |
-| Total          |     1.303 |          |           |                 |
+|   Others       |     0.000 |        3 |       --- |             --- |
+| Signals        |     0.094 |       46 |       --- |             --- |
+| I/O            |     1.415 |        8 |       210 |            3.81 |
+| Static Power   |     0.075 |          |           |                 |
+| Total          |     1.656 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -70,9 +71,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.112 |       0.100 |      0.012 |
-| Vccaux    |       1.800 |     0.054 |       0.041 |      0.013 |
-| Vcco33    |       3.300 |     0.320 |       0.319 |      0.001 |
+| Vccint    |       1.000 |     0.182 |       0.170 |      0.013 |
+| Vccaux    |       1.800 |     0.065 |       0.052 |      0.013 |
+| Vcco33    |       3.300 |     0.400 |       0.399 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -137,8 +138,9 @@ Table of Contents
 +-----------+-----------+
 | Name      | Power (W) |
 +-----------+-----------+
-| top       |     1.229 |
-|   traffic |     0.085 |
+| top       |     1.580 |
+|   clkdiv  |     0.078 |
+|   traffic |     0.076 |
 +-----------+-----------+
 
 

@@ -32,6 +32,6 @@ module clk_div(
         else q <= q + 1;
     end
     
-//    assign clk_3 = q[24];
-    assign clk_3 = clk;
+    assign clk_3 = q[24];
+//    assign clk_3 = clk;
 endmodule

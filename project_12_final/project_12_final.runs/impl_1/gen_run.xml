@@ -1,23 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcsg324-1" LaunchTime="1575269392">
+<GenRun Id="impl_1" LaunchPart="xc7a35tcsg324-1" LaunchTime="1575865739">
   <File Type="PWROPT-DCP" Name="dataShift8_pwropt.dcp"/>
   <File Type="ROUTE-PWR" Name="dataShift8_power_routed.rpt"/>
   <File Type="PA-TCL" Name="dataShift8.tcl"/>
   <File Type="ROUTE-PWR-SUM" Name="dataShift8_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="dataShift8_reports.tcl"/>
   <File Type="BG-DRC" Name="dataShift8.drc"/>
-  <File Type="OPT-DCP" Name="dataShift8_opt.dcp"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="dataShift8_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="dataShift8_timing_summary_init.rpt"/>
   <File Type="OPT-HWDEF" Name="dataShift8.hwdef"/>
+  <File Type="OPT-DCP" Name="dataShift8_opt.dcp"/>
   <File Type="OPT-DRC" Name="dataShift8_drc_opted.rpt"/>
+  <File Type="OPT-TIMING" Name="dataShift8_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DRC" Name="dataShift8_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="dataShift8_timing_summary_pwropted.rpt"/>
   <File Type="PLACE-DCP" Name="dataShift8_placed.dcp"/>
   <File Type="PLACE-IO" Name="dataShift8_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="dataShift8_clock_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="dataShift8_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="dataShift8_utilization_placed.pb"/>
   <File Type="PLACE-CTRL" Name="dataShift8_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="dataShift8_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="dataShift8_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="dataShift8_timing_summary_placed.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="dataShift8_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="dataShift8_timing_summary_postplace_pwropted.rpt"/>
   <File Type="PHYSOPT-DCP" Name="dataShift8_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="dataShift8_drc_physopted.rpt"/>
   <File Type="BG-BIT" Name="dataShift8.bit"/>
+  <File Type="PHYSOPT-TIMING" Name="dataShift8_timing_summary_physopted.rpt"/>
   <File Type="ROUTE-ERROR-DCP" Name="dataShift8_routed_error.dcp"/>
   <File Type="ROUTE-DCP" Name="dataShift8_routed.dcp"/>
   <File Type="ROUTE-BLACKBOX-DCP" Name="dataShift8_routed_bb.dcp"/>
@@ -37,13 +48,18 @@
   <File Type="ROUTE-TIMINGSUMMARY" Name="dataShift8_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="dataShift8_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="dataShift8_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="dataShift8_incremental_reuse_routed.rpt"/>
   <File Type="RDI-RDI" Name="dataShift8.vdi"/>
   <File Type="ROUTE-CLK" Name="dataShift8_clock_utilization_routed.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="dataShift8_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="dataShift8_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="dataShift8_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="dataShift8_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="dataShift8_timing_summary_postroute_physopted.rpx"/>
   <File Type="BITSTR-NKY" Name="dataShift8.nky"/>
   <File Type="BITSTR-BMM" Name="dataShift8_bd.bmm"/>
   <File Type="BITSTR-MMI" Name="dataShift8.mmi"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
   <File Type="BITSTR-LTX" Name="dataShift8.ltx"/>
   <File Type="BITSTR-SYSDEF" Name="dataShift8.sysdef"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
